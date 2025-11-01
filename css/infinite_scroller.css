@@ -1,0 +1,40 @@
+.tag-scroller {
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent, #fff 15%, #fff 85%, transparent);
+  -webkit-mask: linear-gradient(90deg, transparent, #fff 15%, #fff 85%, transparent);
+}
+
+.tag-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+}
+
+.tag-list li {
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1;
+  padding: 0.625rem 1.375rem;
+  border: 2px solid #252A2E;
+  border-radius: 10ch;
+  white-space: nowrap;
+}
+
+.tag-list.scrolling {
+  animation: horizontal-scroll var(--duration, 25s) linear infinite;
+}
+
+@keyframes horizontal-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+/* Handle reduced motion settings */
+@media (prefers-reduced-motion) {
+    .tag-list {
+        flex-flow: row nowrap;
+        overflow: auto;
+    }
+}

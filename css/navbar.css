@@ -1,0 +1,92 @@
+.navbar {
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    color: #0a0a0a;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+}
+
+.navbar-brand span {
+    font-size: clamp(1.5rem, 3.5vh, 2rem);
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #202020;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease-in-out, 
+              font-weight 0.2s ease-in-out,
+              transform 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #000000;
+    transform: scale(1.1);
+    font-weight: 800;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16' /%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    display: flex
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    align-items: center;
+    display: flex;
+    
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding-top: 1rem;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Add glass effect */
+.glassmorphic {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.17);
+}

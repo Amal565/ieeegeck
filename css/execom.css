@@ -1,0 +1,375 @@
+.execom-section {
+    scroll-margin-top: 80px;
+    /* Adjust this value based on your navbar height */
+    font-family: "League Spartan", system-ui, sans-serif;
+       justify-content: space-between;
+
+}
+
+.execom-section .slider-container {
+    max-width: 1025px;
+    margin: 50px auto;
+}
+
+.execom-section .card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    /* Increased width */
+    height: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(124, 123, 123, 0.18);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 10px;
+    /* Even margin on left and right */
+    flex-shrink: 0;
+}
+
+.execom-section .card:hover { 
+transform: scale(1.04);
+}
+
+.execom-section .card-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.execom-section .card-info {
+    margin-top: 15px;
+}
+
+.execom-section .name {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.execom-section .designation {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.execom-section .social-icons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.execom-section .social-icons a svg {
+    width: 30px;
+    height: 30px;
+    fill: #000;
+    transition: transform 0.2s ease, fill 0.3s ease;
+}
+
+.execom-section .social-icons a svg:hover {
+    transform: scale(1.2);
+}
+
+.execom-section .slider-container {
+    max-width: 1025px;
+    margin: 50px auto;
+    display: flex;
+    /* Use Flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow wrapping of cards */
+    justify-content: center;
+    /* Center cards */
+}
+
+.execom-section .card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    /* Default width for larger screens */
+    height: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(124, 123, 123, 0.18);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    /* Space between cards */
+    flex-shrink: 0;
+    box-sizing: border-box;
+    /* Include padding and border in width */
+}
+
+@media (max-width: 768px) {
+    .execom-section .card {
+        width: calc(90% - 100px);
+        /* Reduced width for mobile, leaving some margin */
+        height: auto;
+        /* Adjust height automatically */
+        margin: 10px auto;
+        /* Center the card with margin */
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+.execom-section .slick-prev,
+.execom-section .slick-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 0;
+    /* Hides text */
+    position: absolute;
+    /* Absolute positioning */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Center vertically */
+    display: flex;
+    /* Flexbox for centering */
+    align-items: center;
+    /* Center icon vertically */
+    justify-content: center;
+    /* Center icon horizontally */
+    z-index: 2;
+    /* Ensure buttons are above cards */
+}
+
+.execom-section .slick-prev {
+    left: -50px;
+    /* Adjust to position the button */
+}
+
+.execom-section .slick-next {
+    right: -50px;
+    /* Adjust to position the button */
+}
+ 
+
+
+
+
+
+
+.execom-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.execom-dropdown {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Hover effect */
+.execom-dropdown:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Dropdown options (default select behavior) */
+.execom-dropdown option {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    height: 100vh;  /* Full viewport height */
+}
+
+.section-title {
+    font-size: 2.5rem;  /* Increase size */
+    font-weight: bold;  /* Bold text */
+    text-transform: uppercase;  /* Uppercase letters */
+    color: #333;  /* Dark gray */
+    letter-spacing: 2px;  /* Adds spacing between letters */
+    padding: 10px 20px;  /* Space inside */
+    text-align: center;  /* Ensures text is centered */
+    position: relative;
+}
+
+/* Underline effect */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff; /* Blue underline */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+.see-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.06);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+.goback-btn {
+    position: fixed; /* Keeps it fixed while scrolling */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(135, 206, 250, 0.2); /* Light Sky Blue Tint */
+    backdrop-filter: blur(12px); /* Blurred glass effect */
+    border: 1px solid rgba(135, 206, 250, 0.4); /* Light blue border */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(135, 206, 250, 0.3);
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+/* Hover effect */
+.goback-btn:hover {
+    background: rgba(135, 206, 250, 0.3);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(135, 206, 250, 0.6);
+    transform: scale(1.05);
+}
+
+/* Active effect (when clicked) */
+.goback-btn:active {
+    transform: scale(0.98);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {  
+    .goback-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        left: 10px; /* Adjust position on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .goback-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+        bottom: 10px; /* Reduce space on smaller screens */
+        left: 5px; /* Adjust for very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
