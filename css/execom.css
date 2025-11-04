@@ -227,7 +227,7 @@ transform: scale(1.04);
 
 
 .see-more-btn {
-  display: block;
+  display: inline-block;
   margin: 20px auto;
   padding: 12px 28px;
   font-size: 1rem;
@@ -240,6 +240,9 @@ transform: scale(1.04);
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
 }
 
 .see-more-btn:hover {
@@ -248,9 +251,18 @@ transform: scale(1.04);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
+.see-more-container {
+  text-align: center;
+}
 
 
 
+.see-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
 
 

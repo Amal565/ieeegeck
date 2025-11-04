@@ -732,17 +732,21 @@
 
 
         </div>
+        <div class="see-more-container">
         <button id="seeMoreBtn" class="see-more-btn" onclick="loadPage('execom.html')">See More</button>
-
+</div>
     </section>
     
        
+<section class="gallery" id="gallery">
+  <h2 class="section-title">Gallery</h2>
 
-    <section class="gallery" id="gallery">
-        <h2 class="section-title" style="text-align: center;">Gallery</h2>
-        <div class="grid">
-
-            <div class="item">
+  <!-- 2025 -->
+  <div class="year-section">
+    <h3 class="year-title">2025</h3>
+    <div class="grid">
+      <!-- Event items for 2025 -->
+      <div class="item">
                 <img src="./assets/event_akcssc.png"
                     alt="jujubes cheesecake">
                 <div class="item__details">
@@ -804,12 +808,15 @@
                     <span class="item__title">powder toffee</span>
                 </div>
             </div> 
-            
-        </div>
-         <button id="seeMoreBtn" class="see-more-btn" onclick="loadPage('execom.html')">See More</button>
-    </section>
-
+      <!-- Add more 2025 items -->
     </div>
+  </div>
+  <div class="see-more-container">
+   <a href="gallery.html" class="see-more-btn">See More</a>  <!-- 2024 -->
+ </div>
+</section>
+
+  
 
     <!-- Contact Section -->
     <!-- Last Info Section -->
@@ -921,6 +928,7 @@
     <script src="./js/navbar_autoclose.js"></script>
     <script src="./js/infinite_horizontal_scroller.js"></script>
     <script src="./js/execom.js"></script>
+        <script src="./js/gallery.js"></script>
 
 </body>
 

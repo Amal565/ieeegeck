@@ -79,3 +79,42 @@
 .gallery .item__title {
     display: block;
 }
+/* YEAR TITLES */
+.year-section {
+  margin: 5rem 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.year-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.year-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+/* Subtle glowing underline */
+.year-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #00c6ff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Optional parallax-like background fade */
+.gallery {
+  position: relative;
+  z-index: 1;
+}
