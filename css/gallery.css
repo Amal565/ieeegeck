@@ -118,3 +118,68 @@
   position: relative;
   z-index: 1;
 }
+/* Gallery Year Tab Switcher */
+.gallery-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.gallery-tab-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #1a1a1a;
+  padding: 8px 22px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.gallery-tab-btn:hover {
+  background: rgba(91, 44, 219, 0.2);
+  color: #5b2cdb;
+  border-color: #5b2cdb;
+}
+
+.gallery-tab-btn.active {
+  background: #5b2cdb;
+  color: #ffffff;
+  border-color: #5b2cdb;
+  box-shadow: 0 4px 14px rgba(91, 44, 219, 0.35);
+}
+/* Year Heading Divider */
+.year-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.year-title::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: #5b2cdb;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* Scroll Fade-In Animation */
+.year-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.year-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
